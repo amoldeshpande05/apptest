@@ -302,8 +302,6 @@
       <div class="container right">
          <div class="content">
             <p>You've successfully cloned the code, so click `Build the application` to start the build process.</p>
-            <a class="button is-dark is-medium" title="Build the Application" href="didact://?commandId=extension.sendToTerminal&text=HEREGeocodingandSearch%7CBUILD-APPLICATION%7CHEREGeocodingandSearch|cd%20${CHE_PROJECTS_ROOT}/here-geocoding/HEREGeocodingandSearch%20%26%26%20npm%20install%20--production">Build the Application</a>
-            <p class="afterbutton">  To obtain credentials and configure the application, complete the following steps </p>
          </div>
       </div>
       <div class="container right">
@@ -319,13 +317,20 @@
       <div class="container right">
          <div class="content">
             <p>Let's get the credentials by configuring the application</p>
-            </p> <a class="button is-dark is-medium" title="Open the File" href="didact://?commandId=extension.openFile&text=HEREGeocodingandSearch%7Cconfigure-application%7C${CHE_PROJECTS_ROOT}/here-geocoding/HEREGeocodingandSearch/.env">Configure the Application</a> 
+            </p> <a class="button is-dark is-medium" title="Open the File" href="didact://?commandId=vscode.open&projectFilePath=/projects/apptest/HEREGeocodingandSearch/.env">Configure the Application</a> 
+         </div>
+      </div>
+      <div class="container right">
+         <div class="content">
+            <p>You've successfully cloned the code, so click `Build the application` to start the build process.</p>
+             <a class="button is-dark is-medium" title="Open Terminal" href="didact://?commandId=terminal-for-podman-priv/priv-container:new">Open Terminal</a>
+            <a class="button is-dark is-medium" title="Build the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=podman-priv/priv:%20@workspacea6c8zjx8r2s6f093:/projects/apptest$$podman%20run%20-v%20/projects/apptest/HEREGeocodingandSearch:/projects%20-it%20docker.io/amoldeshpande/sampleapp1-v1:latest%20bin/bash">Pull the Image</a>
          </div>
       </div>
       <div class="container right">
          <div class="content">
             <p>You're all set to get started! </p>
-            <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=extension.sendToTerminal&text=HEREGeocodingandSearch%7Claunch-application%7CHEREGeocodingandSearch|cd%20${CHE_PROJECTS_ROOT}/here-geocoding/HEREGeocodingandSearch%20%26%26%20node%20token.js%20%26%26%20node%20server.js">Launch the Application</a> 
+            <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=podman-priv/priv:%20@workspacea6c8zjx8r2s6f093:/projects/apptest$$cd%20projects%20%26%26%20node%20token.js%20%26%26%20node%20server.js">Launch the Application</a> 
          </div>
       </div>
    </div>
